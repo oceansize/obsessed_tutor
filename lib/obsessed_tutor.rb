@@ -20,9 +20,3 @@ end
 get '/timer' do
   erb :timer
 end
-
-# start = Time.now
-# finish = Time.now
-# elapsed = finish.to_f - start.to_f
-# mins, secs = elapsed.divmod 60.0
-# puts("%3d:%04.2f"%[mins.to_i, secs])
