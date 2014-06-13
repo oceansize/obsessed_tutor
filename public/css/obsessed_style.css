@@ -1,0 +1,62 @@
+/*-----------------------------
+IMPORTS
+-----------------------------*/
+@import url('/meyer-reset.css');
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+
+/*-----------------------------
+BACKGROUND IMAGES
+-----------------------------*/
+html {
+  background: url(../images/rico_sees_you.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*-----------------------------
+TYPOGRAPHY
+-----------------------------*/
+body, a:visited {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+h1, h2, .time, a, a:hover {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .015em;
+}
+
+h1, .time {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4.75em;
+  margin-bottom: 0em;
+  margin-top: .25em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1em;
+  margin-top:2em;
+  margin-bottom: 0.5em;
+}
+
+p.time {
+  font-size: 2.5em;
+  margin: 0.125em;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: .75em;
+}
+
+em {
+  font-size: .5em;
+}

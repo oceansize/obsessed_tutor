@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel='stylesheet' href='/css/obsessed_style.css'>
+    <title>Enrique Sees All...</title>
+  </head>
+  <body>
+    <% @elapsed = Time.now.to_f -  session[:session_start_time].to_f %>
+    <% @mins, @secs = @elapsed.divmod 60.0 %>
+    <section id='message'>
+      <h2>Enrique has been watching you for:</h2>
+      <p class="time"><% @mins %><% @secs %>
+        <%= "%3d <em>minutes</em> %04.2f <em>seconds</em>"%[@mins.to_i, @secs] %></p>
+      <a href="/timer">Update time.</a>
+    </section>
+  </body>
+</html>
